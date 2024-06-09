@@ -1,0 +1,275 @@
+.body_equipo_contrato{
+    margin-top: -10px;
+    width: 100%;
+    height: calc(100vh - 215px);
+}
+
+.body_equipo_contrato .boton_id_cliente{
+    border: 2px solid #0f80aa;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_equipo_contrato .navigation_bar{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 5px 0;
+    /* border: 1px solid lightgray; */
+}
+
+.body_equipo_contrato .navigation_bar .title{
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    height: 100%;
+}
+
+.body_equipo_contrato .navigation_bar .boton_id_prev{
+    border: 3px solid #0f80aa;
+    width: 40px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_equipo_contrato .navigation_bar .boton_id_prev:disabled{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+    background-color: lightgray;
+    border: 3px solid gray;
+}
+
+.body_equipo_contrato .navigation_bar .boton_id_next{
+    border: 3px solid #0f80aa;
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_equipo_contrato .navigation_bar .boton_id_next:disabled{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+    background-color: lightgray;
+    border: 3px solid gray;
+}
+
+.body_equipo_contrato .info_area{
+    width: 100%;
+    height: calc(100vh - 180px);
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    border: 1px solid lightgray;
+}
+
+.body_equipo_contrato .info_area .vehiculos{
+    width: 90%;
+    min-width: 300px;
+    height: calc(100% - 20px);
+    margin: auto;
+}
+
+.body_equipo_contrato .info_area .grid{
+    width: 90%;
+    margin: 20px auto auto auto;
+    /* border: 1px solid blue; */
+}
+
+
+
+.body_equipo_contrato .info_area .vehiculos .lista{
+    margin: 10px auto auto 10px;
+    border: 1px solid lightgray;
+    height: calc(100vh - 210px);
+    overflow: auto;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 10px;
+    border: 5px solid lightgray !important;
+    padding: 3px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .empty_item{
+    border-radius: 10px;
+    border: 5px solid lightgray !important;
+    padding: 3px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .empty_item .title{
+    background-color: lightgray !important;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item:hover{
+    border: 5px solid orange !important;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .selected_item{
+    background: linear-gradient(90deg, rgba(255,165,0,1) 50%, rgba(255,255,255,1) 75%, rgba(255,165,0,1) 85%) !important;
+    border: 5px solid orange !important;
+    border-radius: 10px;
+    padding: 3px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_name{
+    grid-column: 1 / 2;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 10px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgba(15,128,170,1) 58%, rgba(255,255,255,1) 100%);
+    color: white;
+    border-top-left-radius: 5px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_description{
+    grid-column: 1 / 2;
+    font-size: 14px;
+    height: 30px;
+    padding-left: 10px;
+    font-style: italic;
+    background: linear-gradient(90deg, rgba(15,128,170,1) 58%, rgba(255,255,255,1) 100%);
+    color: white;
+    border-bottom-left-radius: 5px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_patent{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    min-width: 110px;
+    
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: white !important;
+    width: 100%;
+    height: 22px;
+    border-radius: 15px !important;
+    background-color: #0f80aa;
+    /* box-shadow: 0 10px 10px 0 rgba(0,0,0,0.22); */
+    /* z-index: 1; */
+}
+
+
+
+
+
+
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_device{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    /* font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: gray !important;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: lightgray;
+    padding-top: 3px;
+    border: 3px solid gray; */
+    z-index: 1;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_device_asignado{
+    
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgb(1, 155, 60);
+    padding-top: 3px;
+    border: 3px solid #0f80aa;
+    /* z-index: 1; */
+}
+
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_device_no_asignado{
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: gray !important;
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: lightgray;
+    padding-top: 3px;
+    border: 3px solid gray;
+    /* z-index: 1; */
+}
+
+
+
+
+
+
+
+
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+    /* font-size: 14px; */
+    text-align: center;
+    /* font-weight: bold; */
+    /* color: white !important; */
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    background-color: rgb(1, 155, 60);
+    /* box-shadow: 0 10px 10px 0 rgba(0,0,0,0.22); */
+    /* padding-top: 2px; */
+    z-index: 2;
+}
+
+
+
+
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_option{
+    background-color:#0f80aa;
+    color:white;
+    width: 25px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 8px;
+    border: 3px solid white;
+    margin-left: 5px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_option:disabled{
+    background-color:lightgrey;
+    color:white;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_option:hover{
+    background-color:white;
+    color:#0f80aa;
+    border: 3px solid #0f80aa;
+}
+
+
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_delete{
+    margin: auto;
+    background-color:#c00;
+    color:white;
+    width: 25px;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 8px;
+    border: 3px solid white;
+    margin-left: 5px;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_delete:disabled{
+    background-color:lightgrey;
+    color:white;
+}
+.body_equipo_contrato .info_area .vehiculos .lista .root_item .item_options .boton_delete:hover{
+    background-color:white;
+    color:#c00;
+    border: #c00 solid 4px;
+}

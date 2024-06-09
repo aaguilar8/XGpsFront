@@ -1,0 +1,83 @@
+
+.body_cliente_contrato{
+    width: 100%;
+    height: calc(100vh - 215px);
+}
+
+.body_cliente_contrato .boton_id_cliente{
+    border: 2px solid #0f80aa;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_cliente_contrato .boton_id_nextprev{
+    border: 2px solid #0f80aa;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_cliente_contrato .info_area{
+    width: 100%;
+    height: calc(100vh - 250px);
+    overflow: auto;
+    padding: 15px 10px 0 10px;
+}
+
+
+
+.body_cliente_contrato .navigation_bar{
+    display: flex;
+    flex-direction: row;
+    margin: -5px 0 5px 0;
+    /* border: 1px solid lightgray; */
+}
+
+.body_cliente_contrato .navigation_bar .title{
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    height: 100%;
+}
+
+.body_cliente_contrato .navigation_bar .boton_id_prev{
+    border: 3px solid #0f80aa;
+    width: 40px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_cliente_contrato .navigation_bar .boton_id_prev:disabled{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+    background-color: lightgray;
+    border: 3px solid gray;
+}
+
+.body_cliente_contrato .navigation_bar .boton_id_next{
+    border: 3px solid #0f80aa;
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
+
+.body_cliente_contrato .navigation_bar .boton_id_next:disabled{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+    background-color: lightgray;
+    border: 3px solid gray;
+}
+
+
+.test1{
+    color: red;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,6 @@
+
+const PAGE_DASHBOARD = 0;
+const PAGE_PROFILE = 1;
+const PAGE_USERS = 2;
+const PAGE_CONFIGURATIONS = 3;
+

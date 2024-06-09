@@ -1,0 +1,26 @@
+
+.container_area_contracts{
+    margin-top: 10px;
+    /* display: block; */
+    /* width: 100%; */
+    /* height: calc(100vh - 130px); */
+    /* border: 1px solid lightgrey; */
+    /* overflow: hidden; */
+    /* overflow:visible; */
+}
+
+/* .container_area_contracts .stepper{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    height: 50px;
+} */
+
+.container_area_contracts .boton_id_nextprev{
+    border: 2px solid #0f80aa;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.22);
+}
